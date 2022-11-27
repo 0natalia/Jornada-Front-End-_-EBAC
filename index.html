@@ -1,19 +1,74 @@
-<html>
-    <head>
-        <title>
-            Teste de HTML - head
-        </title>
-    </head>
-    <body>
-        <h1>Título com H1</h1>
-        <h2>Título com H2</h2>
-    </body>
-    <ol>
-        <li>Lista ordenada 1</li>
-        <li>Lista ordenada 2</li>
-    </ol>
-    <ul>
-        <li>Lista não ordenada 1</li>
-        <li>Lista não ordenada 2</li>
-    </ul>
+<!DOCTYPE html>
+<html lang="en">
+<!-- digitar "doc", e o pluggin vai preencher o cabeçalho do nosso script em utf-8 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Natalia Silva CV</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- Vamos editar todo nosso script na sessão "body" -->
+    <main class="resume-contents">
+        <section class="left-section">
+<!-- Iniciar criando a section/parte esquerda do CV -->
+            <div class="left-section-contents">
+                <div class="profile">
+<!-- Criar um diretório de imagens, e adicionar o camino p/ nossa foto do CV -->
+                    <img class="profile-image" src="img/profile_image.jpeg" alt="Profile image">
+<!-- p cria um parágrafo com informações, ex nome e profissão centralizado abaixo da foto --> 
+                    <p class="name">Natália Silva</p>
+                    <p class="profession">Oceanographer</p>
+                </div>
+                <div class="contact-info">
+<!-- Criar outra sessão com informações de contato -->
+                    <p class="left-title">Contato</p>
+                    <ul>
+<!-- Criar list não ordenada com as informações de tel, email, etc -->
+                        <li><i class="fa fa-phone"></i>+55 19 999999999
+                        </li>
+<!-- i class vai criar os icones no contato após importantarmos pacotes -->   
+                        <li><i class="fa fa-envelope"></i>fake@gmail.com
+                        </li>
+                        <li><i class="fa fa-globe"></i>Brazil
+                        </li>
+                        <li><i class="fa fa-github"></i>endereco_fake
+                        </li>
+                    </ul>
+                </div>
+                <div class="skills">
+<!-- Criar outra sessãp/div p/ skills -->  
+                    <p class="left-title">Skills</p>
+                    <ul>
+                        <li><p>Python, MATLAB, R</p></li>
+                        <li><p>Git & GitHub</p></li>
+                        <li><p>Data Analysis</p></li>
+<!-- <p> dentro da lista indica que podemos descrever um pequeno parágrado com as skills> -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+<!-- Aqui finalizamos a sessão esquerda do CV -->    
+
+<!-- Iniciando a sessão direita do CV -->  
+        <section class="right-section">
+            <div class="right-section-contents">
+                <section class="about gap">
+                    <div class="right-title">Sobre Mim</div>
+                    <p class="about-me-contents">
+                        Blá blá blá<br>
+<!-- Comando <br> quebra a linha no pagráfo --> 
+                        <br> Um pouco mais sobre o que faço
+                        <br> Quais são minhas competencias
+                    </p>
+                </section>
+            </div>
+        </section>
+    </main>
+</body>
 </html>
